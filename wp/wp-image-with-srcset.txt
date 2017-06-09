@@ -1,0 +1,3 @@
+$img_src = wp_get_attachment_image_src($img_id, 'large');
+$img = '<img src="' . $img_src[0] . '" alt="" />';
+$img = wp_image_add_srcset_and_sizes($img, wp_get_attachment_metadata($img_id), $img_id);

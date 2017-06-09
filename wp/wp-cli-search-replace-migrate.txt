@@ -1,0 +1,1 @@
+wp search-replace 'domain.dev' 'domain.fi' --skip-columns=guid --dry-run

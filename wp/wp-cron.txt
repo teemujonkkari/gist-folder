@@ -1,0 +1,5 @@
+*/10 * * * * wget https://www.domain.fi/wp-cron.php --delete-after
+
+define('DISABLE_WP_CRON', 'true');
+
+/usr/local/bin/wget

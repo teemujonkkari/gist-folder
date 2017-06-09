@@ -1,0 +1,7 @@
+function wpcodex_menu_shortcode($atts, $content = null) {
+  extract(shortcode_atts(array( 'name' => null, 'class' => null ), $atts));
+  return wp_nav_menu( array( 'menu' => $name, 'menu_class' => $class, 'echo' => false ) );
+}
+add_shortcode('menu', 'wpcodex_menu_shortcode');
+
+[menu name="languages" class="language-switcher fl-page-bar-nav nav navbar-nav menu"]

@@ -1,0 +1,8 @@
+ONLINEHOSTING.FI
+
+Voit pakottaa sivut ohjautumaan aina HTTPS-versioon lisäämällä seuraavan koodin pätkän kotisivujesi .htaccess tiedostoon:
+
+RewriteEngine On
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]

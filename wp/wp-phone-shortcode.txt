@@ -1,0 +1,7 @@
+function wpcodex_phonenumber_link_shortcode( $atts , $content = null ) {
+  if (!strlen($content)) return;
+  $atts = shortcode_atts( array('number' => ''), $atts, 'phone' );
+  $number = isset($atts['number']) ? $atts['number'] : '';
+  return strlen($number) ? '<a href="tel:' . $number . '">' . $content . '</a>' : $content;
+}
+add_shortcode( 'phone', 'wpcodex_phonenumber_link_shortcode' );

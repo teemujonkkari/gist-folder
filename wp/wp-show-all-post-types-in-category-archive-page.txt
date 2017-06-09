@@ -1,0 +1,6 @@
+function all_cpt_tags( $query ) {
+    if ( $query->is_tag() && $query->is_main_query() ) {
+        $query->set( 'post_type',  'any');
+    }
+}
+add_action( 'pre_get_posts', 'all_cpt_tags' );

@@ -1,0 +1,1 @@
+mogrify -extent 300x300 -gravity Center -fill white *.jpg
