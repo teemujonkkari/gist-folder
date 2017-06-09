@@ -1,0 +1,4 @@
+function render_template_part( $template, $args ) {
+  extract( $args );
+  include( locate_template( $template . '.php' ) );
+}
